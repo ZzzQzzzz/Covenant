@@ -1,3 +1,23 @@
+Be sure to clone Covenant recursively to initialize the git submodules: git clone --recurse-submodules https://github.com/cobbr/Covenant
+Option 1 - Dotnet Core
+
+The easiest way to use Covenant is by installing dotnet core. You can download dotnet core for your platform from here.
+
+Be sure to install the dotnet core version 3.1 SDK!
+
+Once you have installed dotnet core, we can build and run Covenant using the dotnet CLI:
+
+$ ~ > git clone --recurse-submodules https://github.com/cobbr/Covenant
+$ ~ > cd Covenant/Covenant
+$ ~/Covenant/Covenant > dotnet run
+warn: Microsoft.EntityFrameworkCore.Model.Validation[10400]
+      Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data, this mode should only be enabled during development.
+WARNING: Running Covenant non-elevated. You may not have permission to start Listeners on low-numbered ports. Consider running Covenant elevated.
+Covenant has started! Navigate to https://127.0.0.1:7443 in a browser
+
+
+
+
 ![Covenant](https://raw.githubusercontent.com/wiki/cobbr/Covenant/covenant.png)
 [![Contributors](https://img.shields.io/github/contributors/cobbr/Covenant)](https://github.com/cobbr/Covenant/graphs/contributors)
 [![Commit Activity](https://img.shields.io/github/commit-activity/w/cobbr/covenant)](https://github.com/cobbr/Covenant/graphs/commit-activity)
